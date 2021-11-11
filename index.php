@@ -1,25 +1,203 @@
-<?php define('install_edition', 'business');?><?php
+<?php require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php"); ?>
 
-$strErrorMessage = "";
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner header-text">
+        <div class="owl-banner owl-carousel">
+            <div class="banner-item-01">
+                <div class="text-content">
+                    <h4>Best Offer</h4>
+                    <h2>New Arrivals On Sale</h2>
+                </div>
+            </div>
+            <div class="banner-item-02">
+                <div class="text-content">
+                    <h4>Flash Deals</h4>
+                    <h2>Get your best products</h2>
+                </div>
+            </div>
+            <div class="banner-item-03">
+                <div class="text-content">
+                    <h4>Last Minute</h4>
+                    <h2>Grab last minute deals</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
 
-// First compatibility check
-if (!isset($_SERVER["DOCUMENT_ROOT"]) || strlen($_SERVER["DOCUMENT_ROOT"])<=0 || !file_exists($_SERVER["DOCUMENT_ROOT"]) || !is_dir($_SERVER["DOCUMENT_ROOT"]))
-	$strErrorMessage .= '<b>$_SERVER["DOCUMENT_ROOT"]</b> variable must be set to the document root directory under which the current script is executing.<br />';
-elseif (!file_exists($_SERVER["DOCUMENT_ROOT"]."/.access.php"))
-	$strErrorMessage .= 'The file <b>.access.php</b> is not found in the site root. Apparently the installation package has been unpacked incorrectly.<br />';
+    <div class="latest-products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Latest Products</h2>
+                        <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <a href="#"><img src="<?= DEFAULT_TEMPLATE_PATH ?>/assets/images/product_01.jpg" alt=""></a>
+                        <div class="down-content">
+                            <a href="#"><h4>Tittle goes here</h4></a>
+                            <h6>$25.75</h6>
+                            <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span>Reviews (24)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <a href="#"><img src="<?= DEFAULT_TEMPLATE_PATH ?>/assets/images/product_02.jpg" alt=""></a>
+                        <div class="down-content">
+                            <a href="#"><h4>Tittle goes here</h4></a>
+                            <h6>$30.25</h6>
+                            <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span>Reviews (21)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <a href="#"><img src="<?= DEFAULT_TEMPLATE_PATH ?>/assets/images/product_03.jpg" alt=""></a>
+                        <div class="down-content">
+                            <a href="#"><h4>Tittle goes here</h4></a>
+                            <h6>$20.45</h6>
+                            <p>Sixteen Clothing is free CSS template provided by TemplateMo.</p>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span>Reviews (36)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <a href="#"><img src="<?= DEFAULT_TEMPLATE_PATH ?>/assets/images/product_04.jpg" alt=""></a>
+                        <div class="down-content">
+                            <a href="#"><h4>Tittle goes here</h4></a>
+                            <h6>$15.25</h6>
+                            <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span>Reviews (48)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <a href="#"><img src="<?= DEFAULT_TEMPLATE_PATH ?>/assets/images/product_05.jpg" alt=""></a>
+                        <div class="down-content">
+                            <a href="#"><h4>Tittle goes here</h4></a>
+                            <h6>$12.50</h6>
+                            <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span>Reviews (16)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <a href="#"><img src="<?= DEFAULT_TEMPLATE_PATH ?>/assets/images/product_06.jpg" alt=""></a>
+                        <div class="down-content">
+                            <a href="#"><h4>Tittle goes here</h4></a>
+                            <h6>$22.50</h6>
+                            <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span>Reviews (32)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-if ($_SERVER['PHP_SELF'] != "/index.php")
-	$strErrorMessage .= 'Bitrix site manager must be installed in web server root directory.<br />';
+    <div class="best-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>About Sixteen Clothing</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="left-content">
+                        <h4>Looking for the best products?</h4>
+                        <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
+                        <ul class="featured-list">
+                            <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                            <li><a href="#">Consectetur an adipisicing elit</a></li>
+                            <li><a href="#">It aquecorporis nulla aspernatur</a></li>
+                            <li><a href="#">Corporis, omnis doloremque</a></li>
+                            <li><a href="#">Non cum id reprehenderit</a></li>
+                        </ul>
+                        <a href="about.html" class="filled-button">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-image">
+                        <img src="<?= DEFAULT_TEMPLATE_PATH ?>/assets/images/feature-image.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-if (!ini_get("short_open_tag"))
-	$strErrorMessage .= '<b>short_open_tag</b> value must be turned on in you <b>php.ini</b> or <b>.htaccess</b> file.<br />';
 
-if (strlen($strErrorMessage) > 0)
-	die('<font color="#FF0000">'.$strErrorMessage."<br />Please modify the server's configuration or contact administrator of your hosting.</font>");
+    <div class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner-content">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#" class="filled-button">Purchase Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-define("B_PROLOG_INCLUDED", true);
 
-$success = include_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/install/wizard/wizard.php");
-if (!$success)
-	die('<font color="#FF0000">Folder /bitrix/ is inaccessible for writing and/or reading</font>');
-?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
