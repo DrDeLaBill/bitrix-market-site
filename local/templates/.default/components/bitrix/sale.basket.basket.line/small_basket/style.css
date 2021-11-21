@@ -1,0 +1,12 @@
+.bx-basket-block {
+	position: relative;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	white-space: nowrap;
+	font-size: 12px;
+}
+
+.bx-basket-block > .fa {
+	position: relative;
+	width: 12px;
+}
